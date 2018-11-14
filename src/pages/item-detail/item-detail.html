@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ item.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
+  </div>
+
+  <div class="item-detail" padding>
+    <h2>Nombre común: {{item.nombreComun}}</h2>
+    <p>Nombre científico: {{item.nombreCientifico}}</p>
+    <p>Descripción: {{item.descripcion}}</p>
+    <p>Habitat: {{item.habitat}}</p>
+    <p>Longevidad: {{item.longevidad}}</p>
+    <p>Razón de peligro: {{item.razonPeligro}}</p>
+    <p>Cantidad de especies: {{item.cantidadEspecies}}</p>
+    <ion-note item-end *ngIf="item.autorFoto">{{item.autorFoto}}</ion-note>
+  </div>
+</ion-content>
