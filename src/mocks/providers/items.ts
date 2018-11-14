@@ -17,7 +17,7 @@ export class Items {
                 "longevidad": "Hasta 20 años",
                 "razonPeligro": "Principalmente por la pérdida de su hábitat natural en favor del hombre y la cacería de los mismos.",
                 "cantidadEspecies": "4000",
-                "autorFoto": ""
+                "fotoPor": ""
             },
             {
                 "nombreComun": "Axolote",
