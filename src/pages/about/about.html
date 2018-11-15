@@ -26,15 +26,27 @@
       </ion-item>
       <ion-item>
         <ion-label>Especie</ion-label>
-        <ion-select></ion-select>
+        <ion-select formControlName="especie">
+          <ion-option *ngFor="let item of currentItems" [value]="item.nombreComun">{{item.nombreComun}}</ion-option>
+        </ion-select>
       </ion-item>
       <ion-item>
         <ion-label>Reserva</ion-label>
-        <ion-select></ion-select>
+        <ion-select formControlName="reserva">
+          <ion-option *ngFor="let reserva of reservas" [value]="reserva">{{reserva}}</ion-option>
+        </ion-select>
       </ion-item>
       <ion-item>
-        <ion-label>Nombre de tu mascota</ion-label>
+        <ion-label>Nombre del animal</ion-label>
         <ion-input type="text" formControlName="nombreMascota"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Aportación</ion-label>
+        <ion-select>
+          <ion-option value="50">$50</ion-option>
+          <ion-option value="100">$100</ion-option>
+          <ion-option value="200">$200</ion-option>
+        </ion-select>
       </ion-item>
     </ion-list>
     <button clear ion-button (click)="showAlert()">Adoptar</button>
