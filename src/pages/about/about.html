@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="nav-primary">
     <ion-title>Adopta una especie en peligro</ion-title>
   </ion-navbar>
 
@@ -42,14 +42,14 @@
       </ion-item>
       <ion-item>
         <ion-label>Aportación</ion-label>
-        <ion-select>
+        <ion-select formControlName="aportacion">
           <ion-option value="50">$50</ion-option>
           <ion-option value="100">$100</ion-option>
           <ion-option value="200">$200</ion-option>
         </ion-select>
       </ion-item>
     </ion-list>
-    <button clear ion-button (click)="showAlert()">Adoptar</button>
+    <button clear ion-button (click)="openItem()">Adoptar</button>
   </form>
 
 </ion-content>

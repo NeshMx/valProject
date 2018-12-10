@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="nav-primary">
     <ion-title>
       <img src="../../assets/imgs/logo.png" style="width: 32px; height: 32px;">
       Misión Rescate
@@ -16,7 +16,7 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content color="content">
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems">
       <button ion-item (click)="openItem(item)">

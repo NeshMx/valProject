@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="nav-primary">
     <ion-title>Contacto</ion-title>
   </ion-navbar>
 
@@ -16,15 +16,15 @@
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let p of patrocinios">
-      <ion-avatar item-start>
+      <ion-thumbnail item-start>
         <img [src]="p.urlFoto" />
-      </ion-avatar>
+      </ion-thumbnail>
       <h3>{{p.nombre}}</h3>
       <button clear (click)="goToPage(p.paginaOficial)">
-        <ion-icon name="home"></ion-icon>
+        <ion-icon name="home" color="primary"></ion-icon>
       </button>
       <button clear (click)="goToFace(p.face)">
-        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-facebook" color="primary"></ion-icon>
       </button>
     </ion-item>
   </ion-list>
